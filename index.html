@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.24.0/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Text to file | By Abdellatif Laghjaj</title>
 </head>
@@ -17,16 +18,16 @@
             <h2 class="text-4xl font-bold text-white my-2">Text To File</h2>
         </div>
         <div class="text-center form">
-            <textarea name="text" id="text" cols="30" rows="10" class="w-full p-2 border-2 border-gray-300 rounded-md"
-                placeholder="Enter your text here"></textarea>
+            <textarea class="textarea textarea-primary" placeholder="Bio"></textarea>
             <div class="form-bottom">
-                <input type="text" name="filename" id="filename" class="w-full p-2 border-2 border-gray-300 rounded-md"
-                    placeholder="Enter your file name">
-                <select class="appearance-none w-full py-1 px-2 bg-white" name="whatever" id="frm-whatever">
-                    <option value="">Choose file type</option>
-                    <option value="txt">txt</option>
-                    <option value="html">html</option>
-                    <option value="doc">doc</option>
+                <input type="text" placeholder="Type here" class="input input-bordered input-primary w-full max-w-xs" />
+                <select class="select w-full max-w-xs">
+                    <option disabled selected>Pick your favorite Simpson</option>
+                    <option>Homer</option>
+                    <option>Marge</option>
+                    <option>Bart</option>
+                    <option>Lisa</option>
+                    <option>Maggie</option>
                 </select>
             </div>
             <button class="bg-blue-500 text-white p-2 rounded-md w-full">Submit</button>
