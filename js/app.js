@@ -5,7 +5,7 @@ const select_option = document.querySelector('select');
 
 save_btn.addEventListener('click', function(){
     const file_type = getFileType();
-    if(checkFileName(file_name)){
+    if(checkFileName(file_name, file_type)){
         saveFile(file_name, text, file_type);
     }else{
         alert('Please enter a file name with extension');
@@ -32,8 +32,8 @@ function saveFile(data, filename, type) {
 }
 
 //check if file name is empty
-function checkFileName(file, selected_file_type){
-    return file.value != '' && selected_file_type != '';
+function checkFileName(file, type){
+    return file.value != '' && type != 'none';
 }
 
 //get file type
