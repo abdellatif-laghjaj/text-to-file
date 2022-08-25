@@ -1,12 +1,14 @@
 const file_name = document.querySelector('input');
 const text = document.querySelector('textarea');
 const save_btn = document.querySelector('button');
+const select_option = document.querySelector('select');
 
 save_btn.addEventListener('click', function(){
+    const file_type = getFileType();
     if(checkFileName(file_name)){
-        saveFile(file_name, text);
+        saveFile(file_name, text, file_type);
     }else{
-        alert('Please enter a file name');
+        alert('Please enter a file name with extension');
     }
 });
 
@@ -30,6 +32,13 @@ function saveFile(data, filename, type) {
 }
 
 //check if file name is empty
-function checkFileName(file){
-    return file.value != '';
+function checkFileName(file, selected_file_type){
+    return file.value != '' && selected_file_type != '';
+}
+
+//get file type
+function getFileType(){
+    //get selected option
+    let selected_option = select_option.options[select_option.selectedIndex].value;
+    return selected_option;
 }
