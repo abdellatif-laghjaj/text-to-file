@@ -18,16 +18,17 @@
             <h2 class="text-4xl font-bold text-white my-2">Text To File</h2>
         </div>
         <div class="text-center form">
-            <textarea class="textarea textarea-primary" placeholder="Bio"></textarea>
+            <textarea class="textarea textarea-primary w-full" placeholder="Paste or type text here..."></textarea>
             <div class="form-bottom">
-                <input type="text" placeholder="Type here" class="input input-bordered input-primary w-full max-w-xs" />
-                <select class="select w-full max-w-xs">
-                    <option disabled selected>Pick your favorite Simpson</option>
-                    <option>Homer</option>
-                    <option>Marge</option>
-                    <option>Bart</option>
-                    <option>Lisa</option>
-                    <option>Maggie</option>
+                <input type="text" placeholder="File name" class="input input-bordered input-primary w-50" />
+                <select class="select">
+                    <option disabled selected>File type</option>
+                    <option value="txt">.txt</option>
+                    <option value="html">.html</option>
+                    <option value="css">.css</option>
+                    <option value="js">.js</option>
+                    <option value="json">.json</option>
+                    <option value="doc">.doc</option>
                 </select>
             </div>
             <button class="bg-blue-500 text-white p-2 rounded-md w-full">Submit</button>
