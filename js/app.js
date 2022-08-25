@@ -14,7 +14,7 @@ select_option.addEventListener('change', function () {
 });
 
 save_btn.addEventListener('click', function () {
-    const file_type = selected_option;
+    const file_type = getFileType(selected_option);
     if (checkFileName(text, file_name, file_type)) {
         saveFile(text.value, file_name.value, file_type);
     } else {
@@ -44,4 +44,24 @@ function saveFile(data, filename, type) {
 //check if file name is empty
 function checkFileName(text, file, type) {
     return text.value !== '' && file.value !== '' && type !== '';
+}
+
+//return file type
+function getFileType(file) {
+    switch (file) {
+        case 'txt':
+            return 'text/plain';
+        case 'html':
+            return 'text/html';
+        case 'css':
+            return 'text/css';
+        case 'js':
+            return 'text/javascript';
+        case 'json':
+            return 'application/json';
+        case 'doc':
+            return 'application/msword';
+        default:
+            return 'text/plain';
+    }
 }
