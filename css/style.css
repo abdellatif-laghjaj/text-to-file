@@ -17,6 +17,7 @@ body {
     width: 400px;
     max-width: 400px;
     min-width: 400px;
+    margin: 0 540px;
     display: flex;
     justify-content: center;
     align-items: center;
