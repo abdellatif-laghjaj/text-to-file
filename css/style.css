@@ -39,3 +39,12 @@ body {
     gap: 10px;
     margin: 12px 0;
 }
+
+/* RESPONSIVE */
+@media screen and (max-width: 778px) {
+    .container {
+        width: 90%;
+        max-width: 90%;
+        min-width: 90%;
+    }
+}
