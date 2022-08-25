@@ -16,7 +16,7 @@ select_option.addEventListener('change', function () {
 save_btn.addEventListener('click', function () {
     const file_type = selected_option;
     if (checkFileName(text, file_name, file_type)) {
-        saveFile(file_name, text.value, file_type);
+        saveFile(text.value, file_name.value, file_type);
     } else {
         alert('Please enter a file name with extension');
     }
