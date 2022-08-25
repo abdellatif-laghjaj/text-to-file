@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,26 +10,28 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Text to file | By Abdellatif Laghjaj</title>
 </head>
+
 <body>
     <div class="container">
         <div class="text-center">
             <h1 class="text-4xl font-bold">Text To File</h1>
         </div>
-        <div class="text-center">
-            <form>
-                <textarea name="text" id="text" cols="30" rows="10" class="w-full p-2 border-2 border-gray-300 rounded-md" placeholder="Enter your text here"></textarea>
-                <div class="form-bottom">
-                    <input type="text" name="filename" id="filename" class="w-full p-2 border-2 border-gray-300 rounded-md" placeholder="Enter your file name">
-                    <select class="appearance-none w-full py-1 px-2 bg-white" name="whatever" id="frm-whatever">
-                        <option value="">Please choose&hellip;</option>
-                      <option value="1">Item 1</option>
-                      <option value="2">Item 2</option>
-                      <option value="3">Item 3</option>
-                    </select>
-                </div>
-                <button class="bg-blue-500 text-white p-2 rounded-md w-full">Submit</button>
-            </form>
+        <div class="text-center form">
+            <textarea name="text" id="text" cols="30" rows="10" class="w-full p-2 border-2 border-gray-300 rounded-md"
+                placeholder="Enter your text here"></textarea>
+            <div class="form-bottom">
+                <input type="text" name="filename" id="filename" class="w-full p-2 border-2 border-gray-300 rounded-md"
+                    placeholder="Enter your file name">
+                <select class="appearance-none w-full py-1 px-2 bg-white" name="whatever" id="frm-whatever">
+                    <option value="">Please choose&hellip;</option>
+                    <option value="1">Item 1</option>
+                    <option value="2">Item 2</option>
+                    <option value="3">Item 3</option>
+                </select>
+            </div>
+            <button class="bg-blue-500 text-white p-2 rounded-md w-full">Submit</button>
         </div>
-    </div>    
+    </div>
 </body>
+
 </html>
