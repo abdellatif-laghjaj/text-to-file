@@ -10,12 +10,11 @@ document.addEventListener('DOMContentLoaded', function () {
 var selected_option = '';
 select_option.addEventListener('change', function () {
     selected_option = select_option.value;
-    console.log(selected_option);
     save_btn.innerHTML = `SAVE AS ${selected_option.toUpperCase()}`;
 });
 
 save_btn.addEventListener('click', function () {
-    const file_type = getFileType();
+    const file_type = selected_option;
     if (checkFileName(file_name, file_type)) {
         saveFile(file_name, text, file_type);
     } else {
